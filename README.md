@@ -4,6 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 ```
 
+Look at the directory example for full example.
 
 ```python
 ##########################################
