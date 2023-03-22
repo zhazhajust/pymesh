@@ -1,3 +1,10 @@
+
+#Py Mesh 3D
+
+see more details at https://github.com/zhazhajust/pymesh.git
+
+##some example
+
 ```python
 import pymesh
 import numpy as np
