@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="pymesh3d",
-    version="0.0.7",
+    version="0.0.14",
     author="Cai Jie",
     author_email="jiecai@stu.pku.edu.cn",
     description="mesh extract and render by python",
@@ -20,11 +20,11 @@ setuptools.setup(
     ],
     python_requires = '>=3.6',
     install_requires = [
-        'rtree',
         'numpy',
+        'numba',
         'scikit-image',
-        'vtk',
-        'matplotlib',
         'trimesh',
+        'rtree',
+        'matplotlib',
     ],
 )
