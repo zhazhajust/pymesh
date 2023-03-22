@@ -40,7 +40,7 @@ def ger_iso_meshs(res, iso_value_range, colormap):
         tri_color.append(colors)
 
         #color.append(colors[0])
-        iso_vals = np.hstack((iso_vals, np.ones(faces.shape[0]) * iso_value))
+        iso_vals = np.hstack((iso_vals, np.ones_like(verts[:, 0]) * iso_value))
         
     return tri_verts, tri_faces, tri_norms, tri_color, np.asarray(iso_vals)
 
