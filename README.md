@@ -31,7 +31,7 @@ plt.contourf(res[:, int(n/2), :].T)
 cbar = plt.colorbar()
 ```
 
-![png](example/example_files/example_1_0.png)
+![png](https://github.com/zhazhajust/pymesh/blob/main/example/example_files/example_1_0.png?raw=true)
 
 ```python
 ##########################################
@@ -64,7 +64,7 @@ mlab_mesh = pymesh.iso_surface(mesh, colormap = "RdBu")
 mlab.colorbar()
 mlab.show()
 ```
-![png](example/example_files/example_3_0.png)
+![png](https://github.com/zhazhajust/pymesh/blob/main/example/example_files/example_3_0.png?raw=true)
 
 ```python
 ################ plt example #################
@@ -74,4 +74,4 @@ plt.colorbar(surf, orientation = 'horizontal')
 plt.tight_layout()
 ```
 
-![png](example/example_files/example_2_0.png)
+![png](https://github.com/zhazhajust/pymesh/blob/main/example/example_files/example_2_0.png?raw=true)
