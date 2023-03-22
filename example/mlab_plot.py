@@ -5,7 +5,7 @@ from mayavi import mlab
 ############# Load Mesh Data #############
 ##########################################
 
-wkdir = "../../Render"
+wkdir = "/Users/mac/Documents/VScode/python/Render/"
 mesh = pymesh.Mesh.load(wkdir + "test", "obj")
 
 ##########################################
