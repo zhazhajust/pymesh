@@ -10,23 +10,11 @@ class Mesh(Trimesh):
         self.iso_vals = iso_vals
         self.mesh = trimesh.Trimesh(vertices = verts, faces = faces,
                            vertex_normals = normals, vertex_colors = colors)
-        
+        self.verts = self.mesh.vertices
+        self.faces = self.mesh.faces
+        self.normals = self.mesh.vertex_normals
+        self.colors = self.mesh.visual.vertex_colors
         return
-    
-    @property
-    def verts(self):
-        return self.mesh.vertices
-    
-    @property
-    def faces(self):
-        return self.mesh.faces
-    
-    @property
-    def normals(self):
-        return self.mesh.vertex_normals
-    @property
-    def colors(self):
-        return self.mesh.visual.vertex_colors
     
     def load(filename, ext = "obj"):
         mesh = trimesh.load(f"{filename}.{ext}", ext)
