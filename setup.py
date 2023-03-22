@@ -11,7 +11,7 @@ setuptools.setup(
     description="mesh extract and render by python",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    #url="https://github.com/251338258/sampleproject",
+    url="https://github.com/zhazhajust/pymesh.git",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
