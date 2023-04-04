@@ -10,6 +10,9 @@ class Mesh(object):
         self.iso_vals = iso_vals
         self.mesh = trimesh.Trimesh(vertices = verts, faces = faces,
                            vertex_normals = normals, vertex_colors = colors)
+        
+        trimesh.repair.fix_normals(self.mesh, multibody = True)
+
         self.verts = self.mesh.vertices
         self.faces = self.mesh.faces
         self.normals = self.mesh.vertex_normals

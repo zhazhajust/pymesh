@@ -7,19 +7,15 @@ def marching_cubes(res, iso_value, colormap):
     verts, faces, normals, values = measure.marching_cubes(res, iso_value, spacing = [1.0, 1.0, 1.0])
 
     pltmap = colormap.cmap
-        
     vmax = colormap.vmax
     vmin = colormap.vmin
-    
-    #vmax = ey.max()
-    #vmin = -vmax
 
     xp = [vmin, vmax]
     fp = [0, 256]
 
     color = pltmap(int(np.interp(iso_value, xp, fp)))
     colors = np.asarray([color for _ in range(verts.shape[0])])
-    #color = pltmap(np.asarray(np.interp(values, xp, fp), dtype = "int"))
+
     return verts, faces, normals, colors
 
 def ger_iso_meshs(res, iso_value_range, colormap):
@@ -28,7 +24,7 @@ def ger_iso_meshs(res, iso_value_range, colormap):
     tri_faces = []
     tri_norms = []
     tri_color = []
-    #color = []
+
     iso_vals = np.zeros([0])
 
     for iso_value in iso_value_range:
