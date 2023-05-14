@@ -15,7 +15,7 @@ def get_iso_surf(res, **kwargs):
         vmax = kwargs.pop("vmax", res.max() * 0.85)
         vmin = kwargs.pop("vmin", res.max() * 0.15)
     
-    colormap = Colormap(plt.cm.jet, vmin, vmax)
+    colormap = Colormap(cmap, vmin, vmax)
     contours_number = kwargs.pop("contours_number", 4)
     contours = kwargs.pop("contours", np.linspace(vmin, vmax, contours_number))
     
