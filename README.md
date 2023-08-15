@@ -52,8 +52,8 @@ cbar = plt.colorbar()
 ############# Save Mesh Data #############
 ##########################################
 
-mesh = pymesh.get_iso_surf(res, contours_number = 4, cmap = plt.cm.jet)
-color = pymesh.interp_color(mesh.iso_vals, pltmap = plt.cm.jet)
+mesh = pymesh.get_iso_surf(res, contours_number = 4, cmap = "jet")
+color = pymesh.interp_color(mesh.iso_vals, cmap = "jet")
 mesh.export(wkdir + "test", "obj")
 ```
 
@@ -83,7 +83,7 @@ mlab.show()
 ```python
 ################ plt example #################
 
-surf = mesh.plt_trisurf(cmap = plt.cm.jet)
+surf = mesh.plt_trisurf(cmap = "jet")
 plt.colorbar(surf, orientation = 'horizontal')
 plt.tight_layout()
 ```

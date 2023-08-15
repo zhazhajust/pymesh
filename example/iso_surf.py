@@ -22,6 +22,6 @@ cbar = plt.colorbar()
 ############# Save Mesh Data #############
 ##########################################
 
-mesh = pymesh.get_iso_surf(res, contours_number = 4, cmap = plt.cm.jet)
-color = pymesh.interp_color(mesh.iso_vals, pltmap = plt.cm.jet)
+mesh = pymesh.get_iso_surf(res, contours_number = 4, cmap = "jet")
+color = pymesh.interp_color(mesh.iso_vals, pltmap = "jet")
 mesh.export(wkdir + "test", "obj")

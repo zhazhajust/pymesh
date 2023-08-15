@@ -2,6 +2,11 @@ LICENSE
 README.md
 setup.py
 pymesh/__init__.py
+pymesh3d.egg-info/PKG-INFO
+pymesh3d.egg-info/SOURCES.txt
+pymesh3d.egg-info/dependency_links.txt
+pymesh3d.egg-info/requires.txt
+pymesh3d.egg-info/top_level.txt
 pymesh/colormap/__init__.py
 pymesh/colormap/colormap.py
 pymesh/interp3d/__init__.py
@@ -15,8 +20,3 @@ pymesh/mesh/mesh.py
 pymesh/show/__init__.py
 pymesh/show/mlab_plot.py
 pymesh/show/plt_plot.py
-pymesh3d.egg-info/PKG-INFO
-pymesh3d.egg-info/SOURCES.txt
-pymesh3d.egg-info/dependency_links.txt
-pymesh3d.egg-info/requires.txt
-pymesh3d.egg-info/top_level.txt

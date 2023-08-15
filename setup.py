@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="pymesh3d",
-    version="0.0.15",
+    version="0.0.17",
     author="Cai Jie",
     author_email="jiecai@stu.pku.edu.cn",
     description="mesh extract and render by python",

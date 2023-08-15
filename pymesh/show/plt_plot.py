@@ -6,7 +6,7 @@ def plt_trisurf(verts, faces, **kwargs):
     # Display resulting triangular mesh using Matplotlib. This can also be done
     # with mayavi (see skimage.measure.marching_cubes docstring).
     figsize = kwargs.pop("figsize", [4, 3])
-    cmap = kwargs.pop("cmap", plt.cm.jet)
+    cmap = kwargs.pop("cmap", "jet") #plt.cm.jet)
     
     fig = plt.figure(figsize = figsize)
     # Plot the surface.  The triangles in parameter space determine which x, y, z
